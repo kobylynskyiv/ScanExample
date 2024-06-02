@@ -1,0 +1,79 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/station_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/circle_container"
+        android:layout_width="250dp"
+
+        android:layout_height="250dp"
+        app:cardCornerRadius="360dp"
+        app:cardElevation="0dp"
+        app:cardUseCompatPadding="true"
+        android:foreground="@drawable/cardview_rim"
+        app:cardBackgroundColor="@color/white"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:padding="16dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_gravity="top|center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/scan_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/black"
+                android:layout_gravity="top|center"
+                android:text="@string/scan"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:translationZ="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/circle_container"
+                app:layout_constraintEnd_toEndOf="@+id/circle_container"
+                app:layout_constraintStart_toStartOf="@+id/circle_container"
+                app:layout_constraintTop_toTopOf="@+id/circle_container" />
+
+            <TextView
+                android:id="@+id/problems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:drawableTint="@color/red"
+                android:drawablePadding="5dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                app:drawableStartCompat="@drawable/ic_warning"
+                android:fontFamily="@font/black"
+                android:textColor="@color/red"
+                tools:text="@string/tools_problems" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

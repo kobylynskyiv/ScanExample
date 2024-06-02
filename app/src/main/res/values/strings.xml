@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Scan</string>
+
+    <string name="icon">icon</string>
+    <string name="tools_row_dashboard_name">Device info</string>
+    <string name="tools_row_dashboard_description">Show you all info about phone</string>
+    <string name="rightArrow">rightArrow</string>
+
+    <string name="name_section_empty">Name section empty</string>
+    <string name="description_section_empty">Description section empty</string>
+    <string name="problems">"%d Problems</string>
+    <string name="scan">Scan</string>
+    <string name="tools_problems">12 problems</string>
+    <string name="description">Show you all info about phone</string>
+    <string name="check_virus">Check for Viruses</string>
+    <string name="check">Check</string>
+    <string name="alerts">1</string>
+    <string name="dashboard">Dashboard</string>
+</resources>
